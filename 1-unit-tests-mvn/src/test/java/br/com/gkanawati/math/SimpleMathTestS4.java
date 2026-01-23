@@ -1,6 +1,7 @@
 package br.com.gkanawati.math;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.stream.Stream;
 import org.junit.jupiter.api.DisplayName;
@@ -9,6 +10,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 /**
  * This class contains unit tests for the {@link SimpleMath} class.
@@ -85,6 +87,14 @@ class SimpleMathTestS4 {
     assertEquals(bill - discount - allowance + interest + penalty,
         payment,
         () -> "Bill calculation should be correct");
+  }
+
+  @DisplayName("Testing with Value Source")
+  @ParameterizedTest
+  @ValueSource(strings = {"Hello", "JUnit", "Parameterized", "Test"})
+  void testWithValueSource(String input) {
+    System.out.println("Input value: " + input);
+    assertNotNull(input);
   }
 
 }

@@ -3,6 +3,7 @@ package br.com.gkanawati.math;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -14,16 +15,25 @@ class SimpleMathTest {
 
   // conventional naming:
   // test[MethodName]_[StateUnderTest]_[ExpectedBehavior]
+
+  // Ways to organize tests:
+  // BDD -> Given-When-Then
+  // or
+  // AAA -> Arrange-Act-Assert
+
   @Test
   @DisplayName("Testing sum method: adding two numbers should return the correct sum")
   void testSum_WhenAddingTwoNumbers_ThenReturnsCorrectSum() {
+    // given
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
-
-    Double actual = simpleMath.sum(firstNumber, secondNumber);
     double expected = 8.2D;
 
+    // when
+    Double actual = simpleMath.sum(firstNumber, secondNumber);
+
+    // then
     assertNotNull(actual);
     // lazily using a lambda expression (`() -> {}`) to build the fail message
     // when assertion fails, the message is built and displayed
@@ -111,5 +121,12 @@ class SimpleMathTest {
 
     assertNotNull(actual);
     assertEquals(expected, actual, () -> "Square root of " + number + " must be " + expected);
+  }
+
+  @Disabled
+  @Test
+  @DisplayName("Disabled test example")
+  void disabledTestExample() {
+    // This test is disabled and will not run
   }
 }

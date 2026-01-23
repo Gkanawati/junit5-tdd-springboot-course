@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="211d5f92-baef-4160-96b2-c9c3b2e66185" name="Changes" comment="feat: init project with TDD approach">
-      <change afterPath="$PROJECT_DIR$/../.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gkanawati/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/src/main/java/br/com/gkanawati/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gkanawati/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/src/main/java/br/com/gkanawati/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gkanawati/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/src/main/java/br/com/gkanawati/PersonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/gkanawati/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn-old/src/test/java/br/com/gkanawati/PersonServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="27a3218b-4e69-4517-81eb-f1637f6188bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,169 +12,37 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_/Users/gabrielkanawati/Documents/Github/junit5-tdd-springboot-course/2-tdd-unit-tests-mvn" value="38YzVjjvLUWlVwMgeDRCoaNu4jO" />
+      <entry key="_/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn" value="38fOxI3WD85R4DEKlVTaWgDQ4mv" />
     </persistenceIdMap>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-        <option value="uniTestCustomTemplate" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Gkanawati&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Gkanawati/junit5-tdd-springboot-course.git&quot;,
-    &quot;accountId&quot;: &quot;06f3b8a1-7795-4c7c-bd15-346bf0af5a96&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="38YzVjjvLUWlVwMgeDRCoaNu4jO" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="38fOxI3WD85R4DEKlVTaWgDQ4mv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ArrayCompareTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayCompareTest.testArrayCompare.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArrayCompareTest.testSortPerformance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemoRepeatedTest.testDivision_ByZero_ShouldThrowException (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemoRepeatedTest.testDivision_ByZero_ShouldThrowException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LifeCycleJUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SimpleMathTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTest.sum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTest.testDivision_ByZero_ShouldThrowException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.testBillCalculations.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.testDivision.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.testDivisionWithFileSource.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.testSum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SimpleMathTestS4.testWithValueSource.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gabrielkanawati/Documents/Github/junit5-tdd-springboot-course/2-tdd-unit-tests-mvn&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.PersonServiceTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn/src",
+    "onboarding.tips.debug.path": "/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn/src/main/java/br/com/gkanawati/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="br.com.gkanawati" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="br.com.gkanawati.math" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.gkanawati.math" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject">
-    <configuration name="DemoRepeatedTest.testDivision_ByZero_ShouldThrowException (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1-unit-tests-mvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.math" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.math.DemoRepeatedTest" />
-      <option name="METHOD_NAME" value="testDivision_ByZero_ShouldThrowException(org.junit.jupiter.api.RepetitionInfo,org.junit.jupiter.api.TestInfo)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoRepeatedTest.testDivision_ByZero_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2-tdd-unit-tests-mvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.math" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.math.DemoRepeatedTest" />
-      <option name="METHOD_NAME" value="testDivision_ByZero_ShouldThrowException(org.junit.jupiter.api.RepetitionInfo,org.junit.jupiter.api.TestInfo)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoRepeatedTest.testDivision_ByZero_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2-tdd-unit-tests-mvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.math" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.math.DemoRepeatedTest" />
-      <option name="METHOD_NAME" value="testDivision_ByZero_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LifeCycleJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2-tdd-unit-tests-mvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.math" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.math.LifeCycleJUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="PersonServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2-tdd-unit-tests-mvn" />
       <extension name="coverage">
         <pattern>
@@ -195,35 +52,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.gkanawati" />
       <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.PersonServiceTest" />
-      <option name="METHOD_NAME" value="testCreatePerson_WhenSuccess_ShouldReturnPersonObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleMathTestS4.testWithValueSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="2-tdd-unit-tests-mvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.math" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.math.SimpleMathTestS4" />
-      <option name="METHOD_NAME" value="testWithValueSource(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject" />
-        <item itemvalue="JUnit.LifeCycleJUnitTest" />
-        <item itemvalue="JUnit.DemoRepeatedTest.testDivision_ByZero_ShouldThrowException (1)" />
-        <item itemvalue="JUnit.DemoRepeatedTest.testDivision_ByZero_ShouldThrowException" />
-        <item itemvalue="JUnit.SimpleMathTestS4.testWithValueSource" />
+        <item itemvalue="JUnit.PersonServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -237,143 +73,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="211d5f92-baef-4160-96b2-c9c3b2e66185" name="Changes" comment="" />
-      <created>1768991320402</created>
+      <changelist id="27a3218b-4e69-4517-81eb-f1637f6188bf" name="Changes" comment="" />
+      <created>1769187406402</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1768991320402</updated>
-      <workItem from="1768991321583" duration="1486000" />
-      <workItem from="1768993178478" duration="10911000" />
-      <workItem from="1769185355001" duration="754000" />
-      <workItem from="1769186118727" duration="331000" />
-      <workItem from="1769186481573" duration="406000" />
-      <workItem from="1769186899225" duration="506000" />
+      <updated>1769187406402</updated>
+      <workItem from="1769187407618" duration="107000" />
     </task>
-    <task id="LOCAL-00001" summary="feat: create unit test for all methods of SimpleMathTest">
-      <option name="closed" value="true" />
-      <created>1768993966491</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1768993966491</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: enhance unit tests in SimpleMathTest with descriptive display names">
-      <option name="closed" value="true" />
-      <created>1769128717673</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1769128717673</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: improve test structure and add disabled test example in SimpleMathTest">
-      <option name="closed" value="true" />
-      <created>1769129670523</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769129670523</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat: add setup and teardown methods to SimpleMathTest for improved test management">
-      <option name="closed" value="true" />
-      <created>1769130037877</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1769130037877</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: add division by zero check in SimpleMath and update corresponding test">
-      <option name="closed" value="true" />
-      <created>1769130405156</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769130405156</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: add unit tests for array comparison in ArrayCompareTest">
-      <option name="closed" value="true" />
-      <created>1769130695118</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769130695118</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: add performance test with timeout for sorting in ArrayCompareTest">
-      <option name="closed" value="true" />
-      <created>1769131286163</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1769131286163</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: add parameterized tests for division method in SimpleMathTestS4">
-      <option name="closed" value="true" />
-      <created>1769133300674</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1769133300674</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: add parameterized tests for division and bill calculations using CSV sources">
-      <option name="closed" value="true" />
-      <created>1769134228362</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1769134228362</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat: add parameterized test using Value Source in SimpleMathTestS4">
-      <option name="closed" value="true" />
-      <created>1769134348656</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1769134348656</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: add repeated unit tests for division method in DemoRepeatedTest">
-      <option name="closed" value="true" />
-      <created>1769165983113</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1769165983113</updated>
-    </task>
-    <task id="LOCAL-00012" summary="feat: add Life Cycle JUnit tests to demonstrate instance sharing behavior">
-      <option name="closed" value="true" />
-      <created>1769169177480</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1769169177480</updated>
-    </task>
-    <task id="LOCAL-00013" summary="feat: init project with TDD approach">
-      <option name="closed" value="true" />
-      <created>1769187137278</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1769187137278</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create unit test for all methods of SimpleMathTest" />
-    <MESSAGE value="feat: enhance unit tests in SimpleMathTest with descriptive display names" />
-    <MESSAGE value="feat: improve test structure and add disabled test example in SimpleMathTest" />
-    <MESSAGE value="feat: add setup and teardown methods to SimpleMathTest for improved test management" />
-    <MESSAGE value="feat: add division by zero check in SimpleMath and update corresponding test" />
-    <MESSAGE value="feat: add unit tests for array comparison in ArrayCompareTest" />
-    <MESSAGE value="feat: add performance test with timeout for sorting in ArrayCompareTest" />
-    <MESSAGE value="feat: add parameterized tests for division method in SimpleMathTestS4" />
-    <MESSAGE value="feat: add parameterized tests for division and bill calculations using CSV sources" />
-    <MESSAGE value="feat: add parameterized test using Value Source in SimpleMathTestS4" />
-    <MESSAGE value="feat: add repeated unit tests for division method in DemoRepeatedTest" />
-    <MESSAGE value="feat: add Life Cycle JUnit tests to demonstrate instance sharing behavior" />
-    <MESSAGE value="feat: init project with TDD approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: init project with TDD approach" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

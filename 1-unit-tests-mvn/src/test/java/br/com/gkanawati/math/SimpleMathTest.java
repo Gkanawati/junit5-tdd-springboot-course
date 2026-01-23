@@ -3,15 +3,20 @@ package br.com.gkanawati.math;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
  * This class contains unit tests for the {@link SimpleMath} class.
  */
+@DisplayName("SimpleMath Unit Tests")
 class SimpleMathTest {
 
+  // conventional naming:
+  // test[MethodName]_[StateUnderTest]_[ExpectedBehavior]
   @Test
-  void testSum() {
+  @DisplayName("Testing sum method: adding two numbers should return the correct sum")
+  void testSum_WhenAddingTwoNumbers_ThenReturnsCorrectSum() {
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
@@ -26,6 +31,21 @@ class SimpleMathTest {
   }
 
   @Test
+  @DisplayName("Testing division method: dividing by zero should throw ArithmeticException")
+  void testDivision_ByZero_ShouldThrowException() {
+    SimpleMath simpleMath = new SimpleMath();
+    double firstNumber = 6.2D;
+    double secondNumber = 0D;
+
+    try {
+      simpleMath.division(firstNumber, secondNumber);
+    } catch (ArithmeticException ex) {
+      assertEquals("/ by zero", ex.getMessage());
+    }
+  }
+
+  @Test
+  @DisplayName("Testing subtraction method: subtracting two numbers should return the correct difference")
   void testSubtraction() {
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
@@ -39,6 +59,7 @@ class SimpleMathTest {
   }
 
   @Test
+  @DisplayName("Testing multiplication method: multiplying two numbers should return the correct product")
   void testMultiplication() {
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
@@ -52,6 +73,7 @@ class SimpleMathTest {
   }
 
   @Test
+  @DisplayName("Testing division method: dividing two numbers should return the correct quotient")
   void testDivision() {
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
@@ -65,6 +87,7 @@ class SimpleMathTest {
   }
 
   @Test
+  @DisplayName("Testing mean method: calculating the mean of two numbers should return the correct average")
   void testMean() {
     SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
@@ -78,6 +101,7 @@ class SimpleMathTest {
   }
 
   @Test
+  @DisplayName("Testing squareRoot method: calculating the square root of a number should return the correct result")
   void testSquareRoot() {
     SimpleMath simpleMath = new SimpleMath();
     double number = 81D;

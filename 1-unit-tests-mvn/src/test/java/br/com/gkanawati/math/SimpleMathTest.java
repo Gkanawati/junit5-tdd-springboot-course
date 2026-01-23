@@ -3,6 +3,10 @@ package br.com.gkanawati.math;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,6 +16,29 @@ import org.junit.jupiter.api.Test;
  */
 @DisplayName("SimpleMath Unit Tests")
 class SimpleMathTest {
+
+  SimpleMath simpleMath;
+
+  @BeforeAll
+  static void setUp() {
+    System.out.println("Running @BeforeAll setup method...");
+  }
+
+  @BeforeEach
+  void init() {
+    simpleMath = new SimpleMath();
+    System.out.println("Running @BeforeEach init method...");
+  }
+
+  @AfterEach
+  void cleanUp() {
+    System.out.println("Running @AfterEach cleanUp method...");
+  }
+
+  @AfterAll
+  static void tearDown() {
+    System.out.println("Running @AfterAll teardown method...");
+  }
 
   // conventional naming:
   // test[MethodName]_[StateUnderTest]_[ExpectedBehavior]
@@ -25,13 +52,14 @@ class SimpleMathTest {
   @DisplayName("Testing sum method: adding two numbers should return the correct sum")
   void testSum_WhenAddingTwoNumbers_ThenReturnsCorrectSum() {
     // given
-    SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
     double expected = 8.2D;
 
     // when
     Double actual = simpleMath.sum(firstNumber, secondNumber);
+
+    System.out.println("Sum result: " + actual);
 
     // then
     assertNotNull(actual);
@@ -57,7 +85,6 @@ class SimpleMathTest {
   @Test
   @DisplayName("Testing subtraction method: subtracting two numbers should return the correct difference")
   void testSubtraction() {
-    SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
 
@@ -71,7 +98,6 @@ class SimpleMathTest {
   @Test
   @DisplayName("Testing multiplication method: multiplying two numbers should return the correct product")
   void testMultiplication() {
-    SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
 
@@ -85,7 +111,6 @@ class SimpleMathTest {
   @Test
   @DisplayName("Testing division method: dividing two numbers should return the correct quotient")
   void testDivision() {
-    SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
 
@@ -99,7 +124,6 @@ class SimpleMathTest {
   @Test
   @DisplayName("Testing mean method: calculating the mean of two numbers should return the correct average")
   void testMean() {
-    SimpleMath simpleMath = new SimpleMath();
     double firstNumber = 6.2D;
     double secondNumber = 2D;
 
@@ -113,7 +137,6 @@ class SimpleMathTest {
   @Test
   @DisplayName("Testing squareRoot method: calculating the square root of a number should return the correct result")
   void testSquareRoot() {
-    SimpleMath simpleMath = new SimpleMath();
     double number = 81D;
 
     Double actual = simpleMath.squareRoot(number);

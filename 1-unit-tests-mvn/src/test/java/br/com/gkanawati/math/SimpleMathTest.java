@@ -2,6 +2,7 @@ package br.com.gkanawati.math;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -69,20 +70,6 @@ class SimpleMathTest {
   }
 
   @Test
-  @DisplayName("Testing division method: dividing by zero should throw ArithmeticException")
-  void testDivision_ByZero_ShouldThrowException() {
-    SimpleMath simpleMath = new SimpleMath();
-    double firstNumber = 6.2D;
-    double secondNumber = 0D;
-
-    try {
-      simpleMath.division(firstNumber, secondNumber);
-    } catch (ArithmeticException ex) {
-      assertEquals("/ by zero", ex.getMessage());
-    }
-  }
-
-  @Test
   @DisplayName("Testing subtraction method: subtracting two numbers should return the correct difference")
   void testSubtraction() {
     double firstNumber = 6.2D;
@@ -119,6 +106,23 @@ class SimpleMathTest {
 
     assertNotNull(actual);
     assertEquals(expected, actual, () -> firstNumber + " / " + secondNumber + " must be " + expected);
+  }
+
+  @Test
+  @DisplayName("Testing division method: dividing by zero should throw ArithmeticException")
+  void testDivision_ByZero_ShouldThrowException() {
+    // given
+    double firstNumber = 6.2D;
+    double secondNumber = 0D;
+    var expectedExceptionMessage = "Impossível dividir por zero";
+
+    // when & then
+    ArithmeticException actual = assertThrows(ArithmeticException.class,
+        () -> simpleMath.division(firstNumber, secondNumber)
+    );
+
+    assertEquals(expectedExceptionMessage, actual.getMessage(),
+        () -> "Exception message must be: " + expectedExceptionMessage);
   }
 
   @Test

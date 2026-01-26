@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a3218b-4e69-4517-81eb-f1637f6188bf" name="Changes" comment="" />
+    <list default="true" id="b3d3c474-c1fa-4950-9aad-e7582412aa76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gkanawati/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gkanawati/PersonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/gkanawati/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/gkanawati/PersonServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,36 +20,72 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn" value="38fOxI3WD85R4DEKlVTaWgDQ4mv" />
+      <entry key="_/Users/gabrielkanawati/Documents/Github/junit5-tdd-springboot-course/2-tdd-unit-tests-mvn" value="38oT7esSNi2Ai14KZRAIuekT67d" />
     </persistenceIdMap>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Gkanawati"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Gkanawati/junit5-tdd-springboot-course.git",
+    "accountId": "06f3b8a1-7795-4c7c-bd15-346bf0af5a96"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="38fOxI3WD85R4DEKlVTaWgDQ4mv" />
+  <component name="ProjectId" id="38oT7esSNi2Ai14KZRAIuekT67d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in 2-tdd-unit-tests-mvn.executor": "Run",
     "JUnit.PersonServiceTest.executor": "Run",
+    "JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldContainsFirstNameLastName.executor": "Run",
+    "JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject.executor": "Run",
+    "JUnit.PersonServiceTest.testCreatePerson_WithNullEmail_ShouldThrowIllegalArgumentException.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn/src",
-    "onboarding.tips.debug.path": "/Users/gabrielkanawati/Documents/Github/udemy-course/2-tdd-unit-tests-mvn/src/main/java/br/com/gkanawati/Main.java",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PersonServiceTest.testCreatePerson_WithNullEmail_ShouldThrowIllegalArgumentException">
+    <configuration name="All in 2-tdd-unit-tests-mvn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-tdd-unit-tests-mvn" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2-tdd-unit-tests-mvn" />
       <extension name="coverage">
@@ -57,9 +101,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersonServiceTest.testCreatePerson_WhenSuccess_ShouldContainsFirstNameLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-tdd-unit-tests-mvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gkanawati.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gkanawati" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.PersonServiceTest" />
+      <option name="METHOD_NAME" value="testCreatePerson_WhenSuccess_ShouldContainsFirstNameLastName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-tdd-unit-tests-mvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gkanawati.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gkanawati" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.PersonServiceTest" />
+      <option name="METHOD_NAME" value="testCreatePerson_WhenSuccess_ShouldReturnPersonObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceTest.testCreatePerson_WithNullEmail_ShouldThrowIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2-tdd-unit-tests-mvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gkanawati.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gkanawati" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.PersonServiceTest" />
+      <option name="METHOD_NAME" value="testCreatePerson_WithNullEmail_ShouldThrowIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonServiceTest.testCreatePerson_WithNullEmail_ShouldThrowIllegalArgumentException" />
         <item itemvalue="JUnit.PersonServiceTest" />
+        <item itemvalue="JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldReturnPersonObject" />
+        <item itemvalue="JUnit.PersonServiceTest.testCreatePerson_WhenSuccess_ShouldContainsFirstNameLastName" />
+        <item itemvalue="JUnit.All in 2-tdd-unit-tests-mvn" />
       </list>
     </recent_temporary>
   </component>
@@ -73,12 +169,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27a3218b-4e69-4517-81eb-f1637f6188bf" name="Changes" comment="" />
-      <created>1769187406402</created>
+      <changelist id="b3d3c474-c1fa-4950-9aad-e7582412aa76" name="Changes" comment="" />
+      <created>1769464760327</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1769187406402</updated>
-      <workItem from="1769187407618" duration="107000" />
+      <updated>1769464760327</updated>
+      <workItem from="1769464761443" duration="2215000" />
     </task>
     <servers />
   </component>

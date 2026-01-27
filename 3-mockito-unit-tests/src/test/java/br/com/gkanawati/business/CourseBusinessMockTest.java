@@ -1,6 +1,7 @@
 package br.com.gkanawati.business;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -76,6 +77,17 @@ class CourseBusinessMockTest {
     // when / then
     assertEquals("Element", mockedList.get(anyInt()));
     assertEquals("Element", mockedList.get(999));
+  }
+
+  @Test
+  void testMockingList_When_ThrowsException() {
+    // given
+    List<String> mockedList = mock(List.class);
+    when(mockedList.getFirst()).thenThrow(new RuntimeException("Something went wrong"));
+
+    // when / then
+    RuntimeException exception = assertThrows(RuntimeException.class, mockedList::getFirst);
+    assertEquals("Something went wrong", exception.getMessage());
   }
 
 }

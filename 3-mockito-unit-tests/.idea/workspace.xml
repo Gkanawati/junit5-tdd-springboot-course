@@ -90,7 +90,7 @@
       <recent name="br.com.gkanawati.business" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourseBusinessMockTest.testMockingList_GetIsCalledWith_ArgumentMatchers">
+  <component name="RunManager" selected="JUnit.CourseBusinessMockTest.testMockingList_When_ThrowsException">
     <configuration name="CourseBusinessMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
       <extension name="coverage">
@@ -154,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseBusinessMockTest.testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseBusinessMockTest.testMockingList_When_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +164,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
       <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
-      <option name="METHOD_NAME" value="testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceMock" />
+      <option name="METHOD_NAME" value="testMockingList_When_ThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_When_ThrowsException" />
         <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_GetIsCalledWith_ArgumentMatchers" />
         <item itemvalue="JUnit.CourseBusinessMockTest" />
         <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_GetMustReturn_DifferentValues" />
         <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_Size" />
-        <item itemvalue="JUnit.CourseBusinessMockTest.testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceMock" />
       </list>
     </recent_temporary>
   </component>

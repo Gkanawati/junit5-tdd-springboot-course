@@ -24,4 +24,8 @@ public class CourseServiceStub implements CourseService {
     );
   }
 
+  @Override
+  public void deleteCourse(String studentName) {
+  }
+
 }

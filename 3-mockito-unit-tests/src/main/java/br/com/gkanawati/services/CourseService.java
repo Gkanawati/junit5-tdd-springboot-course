@@ -4,6 +4,7 @@ import java.util.List;
 
 public interface CourseService {
 
-  public List<String> retrieveCourses(String studentName);
+  List<String> retrieveCourses(String studentName);
+  void deleteCourse(String studentName);
 
 }

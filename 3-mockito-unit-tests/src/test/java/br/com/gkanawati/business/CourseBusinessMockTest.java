@@ -1,15 +1,20 @@
 package br.com.gkanawati.business;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import br.com.gkanawati.services.CourseService;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
 
 class CourseBusinessMockTest {
 
@@ -23,7 +28,7 @@ class CourseBusinessMockTest {
     courseBusiness = new CourseBusiness(courseService);
 
     allCourses = List.of("Spring MVC", "Spring Boot", "Spring Security Fundamentals",
-        "API RESTful with Spring");
+        "API RESTful with Spring", "Java Basics", "OOP", "Docker Essentials");
   }
 
   @Test
@@ -90,4 +95,38 @@ class CourseBusinessMockTest {
     assertEquals("Something went wrong", exception.getMessage());
   }
 
+  @Test
+  void testShould_DeleteCoursesNotRelatedToSpring_When_UsingCourseServiceMock() {
+    // given
+    when(courseService.retrieveCourses("John Doe")).thenReturn(allCourses);
+
+    // when
+    courseBusiness.deleteCoursesNotRelatedToSpring("John Doe");
+
+    // then
+    verify(courseService).deleteCourse("Docker Essentials");
+    verify(courseService, times(1)).deleteCourse("Java Basics");
+    verify(courseService, atLeast(1)).deleteCourse("OOP");
+    verify(courseService, times(0)).deleteCourse("Spring MVC");
+  }
+
+  @Test
+  void testShould_DeleteCoursesNotRelatedToSpring_CapturingArguments_When_UsingCourseServiceMock(){
+    // given
+    when(courseService.retrieveCourses("John Doe")).thenReturn(allCourses);
+    ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+
+    // when
+    courseBusiness.deleteCoursesNotRelatedToSpring("John Doe");
+
+    // then
+    verify(courseService, times(3)).deleteCourse(captor.capture());
+
+    List<String> deletedCourses = captor.getAllValues();
+
+    assertEquals(3, deletedCourses.size());
+    for (String course : deletedCourses) {
+      assertFalse(course.contains("Spring"));
+    }
+  }
 }

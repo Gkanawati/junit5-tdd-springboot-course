@@ -63,4 +63,52 @@ class PersonRepositoryTest {
     assertEquals(person.getFirstName(), optionalPerson.get().getFirstName());
   }
 
+  @Test
+  @DisplayName("Given Person Object When Find By Email Then Return Person Object")
+  void testGivenPersonObject_whenFindByEmail_thenReturnPersonObject() {
+    // given
+    Person person = new Person("John", "Doe", "johndoe@example", "Sao Paulo", "Male");
+    personRepository.save(person);
+
+    // when
+    var optionalPerson = personRepository.findByEmail(person.getEmail());
+
+    // then
+    assertTrue(optionalPerson.isPresent());
+    assertEquals(person.getId(), optionalPerson.get().getId());
+    assertEquals(person.getFirstName(), optionalPerson.get().getFirstName());
+  }
+
+  @Test
+  @DisplayName("Given Person Object When Update Then Return Updated Person")
+  void testGivenPersonObject_whenUpdatePerson_thenReturnUpdatedPerson() {
+    // given
+    Person person = new Person("John", "Doe", "johndoe@example", "Sao Paulo", "Male");
+    personRepository.save(person);
+
+    // when
+    Person savedPerson = personRepository.findById(person.getId()).orElseThrow();
+    savedPerson.setFirstName("Johnny");
+    Person updatedPerson = personRepository.save(savedPerson);
+
+    // then
+    assertEquals("Johnny", updatedPerson.getFirstName());
+    assertEquals(savedPerson.getId(), updatedPerson.getId());
+  }
+
+  @Test
+  @DisplayName("Given Person Object When Delete Then Remove Person")
+  void testGivenPersonObject_whenDelete_thenRemovePerson() {
+    // given
+    Person person = new Person("John", "Doe", "johndoe@example", "Sao Paulo", "Male");
+    personRepository.save(person);
+
+    // when
+    personRepository.delete(person);
+    var optionalPerson = personRepository.findById(person.getId());
+
+    // then
+    assertTrue(optionalPerson.isEmpty());
+  }
+
 }

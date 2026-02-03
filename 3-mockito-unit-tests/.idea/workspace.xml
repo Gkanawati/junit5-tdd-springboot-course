@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40f497c-9ec0-409d-8199-b0a3c4d48301" name="Changes" comment="feat: implement CourseBusiness with course retrieval and related tests">
+    <list default="true" id="f40f497c-9ec0-409d-8199-b0a3c4d48301" name="Changes" comment="feat: add JaCoCo plugin for code coverage reporting" />
+    <list id="5d303c66-b522-4104-9338-85cba9aaa693" name="dontCommit" comment="">
+      <change afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2-tdd-unit-tests-mvn/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/gkanawati/business/CourseBusinessMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/gkanawati/business/CourseBusinessMockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +37,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Gkanawati"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gkanawati&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Gkanawati/junit5-tdd-springboot-course.git",
-    "accountId": "06f3b8a1-7795-4c7c-bd15-346bf0af5a96"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gkanawati/junit5-tdd-springboot-course.git&quot;,
+    &quot;accountId&quot;: &quot;06f3b8a1-7795-4c7c-bd15-346bf0af5a96&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="38oc6JuFEFaJgyDtS51E2BpXOMb" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,12 +65,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CheckoutServiceTest.executor": "Run",
+    "JUnit.CheckoutServiceTest.testMockObjectConstruction.executor": "Run",
     "JUnit.CourseBusinessMockTest.executor": "Run",
     "JUnit.CourseBusinessMockTest.testMockingList_GetIsCalledWith_ArgumentMatchers.executor": "Run",
     "JUnit.CourseBusinessMockTest.testMockingList_GetMustReturn_DifferentValues.executor": "Run",
     "JUnit.CourseBusinessMockTest.testMockingList_Size.executor": "Run",
+    "JUnit.CourseBusinessMockTest.testMockingList_When_ThrowsException.executor": "Run",
+    "JUnit.CourseBusinessMockTest.testMockingVoidMethod_DeleteCourse.executor": "Run",
+    "JUnit.CourseBusinessMockTest.testShould_DeleteCoursesNotRelatedToSpring_CapturingArguments_When_UsingCourseServiceMock.executor": "Run",
+    "JUnit.CourseBusinessMockTest.testShould_DeleteCoursesNotRelatedToSpring_When_UsingCourseServiceMock.executor": "Run",
     "JUnit.CourseBusinessMockTest.testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceMock.executor": "Run",
+    "JUnit.CourseBusinessMockWithBDDTest.testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceMock.executor": "Run",
+    "JUnit.CourseBusinessMockitoInjectMocksTest.executor": "Run",
+    "JUnit.CourseBusinessMockitoInjectMocksTest.testDeleteCoursesNotRelatedToSpring_CapturingArguments_Should_WorkAsExpected.executor": "Run",
     "JUnit.CourseBusinessTest.testShould_ReturnCoursesRelatedToSpring_When_UsingCourseServiceStub.executor": "Run",
+    "JUnit.HamcrestMatchersTest.executor": "Run",
+    "JUnit.HamcrestMatchersTest.testHamcrestArraysMatchers.executor": "Run",
+    "JUnit.HamcrestMatchersTest.testHamcrestMatchers.executor": "Run",
+    "JUnit.HamcrestMatchersTest.testHamcrestStringMatchers.executor": "Run",
+    "JUnit.MyUtilsTest.executor": "Run",
+    "JUnit.MyUtilsTest.shouldMockStaticMethodWithParams.executor": "Run",
+    "JUnit.OrderServiceTest.executor": "Run",
+    "JUnit.OrderServiceTest.shouldIncludeRandomOrderIdWhenNoParentOrderExists.executor": "Debug",
+    "JUnit.SpyTest.executor": "Run",
+    "JUnit.SpyTest.testWithMock.executor": "Run",
+    "JUnit.SpyTest.testWithSpy.executor": "Run",
+    "JUnit.SpyTest.testWithSpyAndStubbedMethod.executor": "Run",
+    "JUnit.SpyTest.testWithSpyVerifyBehavior.executor": "Run",
+    "JUnit.java in 3-mockito-unit-tests.executor": "Coverage",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,6 +105,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,103 +113,102 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/gkanawati/mockito/constructor" />
+      <recent name="$PROJECT_DIR$/src/test/java/br/com/gkanawati/services" />
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/gkanawati/services" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.gkanawati.business" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.gkanawati.mockito.constructor" />
+      <recent name="br.com.gkanawati.mockito" />
       <recent name="br.com.gkanawati.services" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.gkanawati.mockito" />
       <recent name="br.com.gkanawati.business" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourseBusinessMockTest.testMockingList_When_ThrowsException">
-    <configuration name="CourseBusinessMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.java in 3-mockito-unit-tests">
+    <configuration name="CheckoutServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.business.*" />
+          <option name="PATTERN" value="br.com.gkanawati.mockito.constructor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
+      <option name="PACKAGE_NAME" value="br.com.gkanawati.mockito.constructor" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.mockito.constructor.CheckoutServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseBusinessMockTest.testMockingList_GetIsCalledWith_ArgumentMatchers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckoutServiceTest.testMockObjectConstruction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.business.*" />
+          <option name="PATTERN" value="br.com.gkanawati.mockito.constructor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
-      <option name="METHOD_NAME" value="testMockingList_GetIsCalledWith_ArgumentMatchers" />
+      <option name="PACKAGE_NAME" value="br.com.gkanawati.mockito.constructor" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.mockito.constructor.CheckoutServiceTest" />
+      <option name="METHOD_NAME" value="testMockObjectConstruction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseBusinessMockTest.testMockingList_GetMustReturn_DifferentValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.business.*" />
+          <option name="PATTERN" value="br.com.gkanawati.mockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
-      <option name="METHOD_NAME" value="testMockingList_GetMustReturn_DifferentValues" />
+      <option name="PACKAGE_NAME" value="br.com.gkanawati.mockito" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.mockito.MyUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyUtilsTest.shouldMockStaticMethodWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="3-mockito-unit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gkanawati.mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.gkanawati.mockito" />
+      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.mockito.MyUtilsTest" />
+      <option name="METHOD_NAME" value="shouldMockStaticMethodWithParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseBusinessMockTest.testMockingList_Size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="java in 3-mockito-unit-tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="3-mockito-unit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.business.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
-      <option name="METHOD_NAME" value="testMockingList_Size" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseBusinessMockTest.testMockingList_When_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="3-mockito-unit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.gkanawati.business.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.gkanawati.business" />
-      <option name="MAIN_CLASS_NAME" value="br.com.gkanawati.business.CourseBusinessMockTest" />
-      <option name="METHOD_NAME" value="testMockingList_When_ThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_When_ThrowsException" />
-        <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_GetIsCalledWith_ArgumentMatchers" />
-        <item itemvalue="JUnit.CourseBusinessMockTest" />
-        <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_GetMustReturn_DifferentValues" />
-        <item itemvalue="JUnit.CourseBusinessMockTest.testMockingList_Size" />
+        <item itemvalue="JUnit.java in 3-mockito-unit-tests" />
+        <item itemvalue="JUnit.CheckoutServiceTest" />
+        <item itemvalue="JUnit.CheckoutServiceTest.testMockObjectConstruction" />
+        <item itemvalue="JUnit.MyUtilsTest" />
+        <item itemvalue="JUnit.MyUtilsTest.shouldMockStaticMethodWithParams" />
       </list>
     </recent_temporary>
   </component>
@@ -191,11 +223,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f40f497c-9ec0-409d-8199-b0a3c4d48301" name="Changes" comment="" />
+      <changelist id="5d303c66-b522-4104-9338-85cba9aaa693" name="dontCommit" comment="" />
       <created>1769469188985</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769469188985</updated>
-      <workItem from="1769469190117" duration="3358000" />
+      <workItem from="1769469190117" duration="4927000" />
+      <workItem from="1769819700546" duration="4144000" />
+      <workItem from="1769887670337" duration="17508000" />
     </task>
     <task id="LOCAL-00001" summary="feat: implement CourseBusiness with course retrieval and related tests">
       <option name="closed" value="true" />
@@ -205,7 +240,87 @@
       <option name="project" value="LOCAL" />
       <updated>1769471804704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add unit tests for mocking List behavior in CourseBusinessMockTest">
+      <option name="closed" value="true" />
+      <created>1769472664897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769472664897</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add test for exception handling in mocked List behavior">
+      <option name="closed" value="true" />
+      <created>1769472920030</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769472920030</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add BDD-style unit test for CourseBusiness with CourseService mock">
+      <option name="closed" value="true" />
+      <created>1769820877181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769820877181</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: implement course deletion for non-Spring courses and add corresponding unit tests">
+      <option name="closed" value="true" />
+      <created>1769823772773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769823772773</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: studying hamcrest assertions">
+      <option name="closed" value="true" />
+      <created>1769892246676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769892246676</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: create SpyTest for testing with Mockito spies and mocks">
+      <option name="closed" value="true" />
+      <created>1769892259457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769892259457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: study mock of static methods - mockStatic">
+      <option name="closed" value="true" />
+      <created>1769973119288</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769973119288</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: study mockConstruction">
+      <option name="closed" value="true" />
+      <created>1769975031366</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769975031366</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: update Maven Surefire plugin configuration and add report generation">
+      <option name="closed" value="true" />
+      <created>1769977033744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769977033744</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add JaCoCo plugin for code coverage reporting">
+      <option name="closed" value="true" />
+      <created>1770063370868</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1770063370868</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +328,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: implement CourseBusiness with course retrieval and related tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement CourseBusiness with course retrieval and related tests" />
+    <MESSAGE value="feat: add unit tests for mocking List behavior in CourseBusinessMockTest" />
+    <MESSAGE value="feat: add test for exception handling in mocked List behavior" />
+    <MESSAGE value="feat: add BDD-style unit test for CourseBusiness with CourseService mock" />
+    <MESSAGE value="feat: implement course deletion for non-Spring courses and add corresponding unit tests" />
+    <MESSAGE value="feat: studying hamcrest assertions" />
+    <MESSAGE value="feat: create SpyTest for testing with Mockito spies and mocks" />
+    <MESSAGE value="feat: study mock of static methods - mockStatic" />
+    <MESSAGE value="feat: study mockConstruction" />
+    <MESSAGE value="feat: update Maven Surefire plugin configuration and add report generation" />
+    <MESSAGE value="feat: add JaCoCo plugin for code coverage reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add JaCoCo plugin for code coverage reporting" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/gkanawati/business/CourseBusiness.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/gkanawati/business/CourseBusiness.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/gkanawati/business/CourseBusiness.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/gkanawati/services/OrderServiceTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/3_mockito_unit_tests$java_in_3_mockito_unit_tests.ic" NAME="java in 3-mockito-unit-tests Coverage Results" MODIFIED="1769976180836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

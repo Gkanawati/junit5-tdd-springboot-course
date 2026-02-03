@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3d3c474-c1fa-4950-9aad-e7582412aa76" name="Changes" comment="feat: update workspace configuration with enhanced task management and commit message">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3-mockito-unit-tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3-mockito-unit-tests/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3-mockito-unit-tests/src/test/java/br/com/gkanawati/business/CourseBusinessMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3-mockito-unit-tests/src/test/java/br/com/gkanawati/business/CourseBusinessMockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +173,7 @@
       <updated>1769464760327</updated>
       <workItem from="1769464761443" duration="2773000" />
       <workItem from="1769469210379" duration="613000" />
+      <workItem from="1769819702367" duration="360000" />
     </task>
     <task id="LOCAL-00001" summary="feat: enhance Person creation with validation and ID assignment">
       <option name="closed" value="true" />

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eb6b97b-9d6d-4636-8db2-4af091ddf40f" name="Changes" comment="feat: create second project with TDD approach">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-tdd-unit-tests-mvn/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-tdd-unit-tests-mvn/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-mockito-unit-tests/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-mockito-unit-tests/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-mockito-unit-tests/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-mockito-unit-tests/src/test/java/br/com/gkanawati/mockito/CourseBusinessMockitoInjectMocksTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-mockito-unit-tests/src/test/java/br/com/gkanawati/mockito/HamcrestMatchersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-tdd-unit-tests-mvn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-tdd-unit-tests-mvn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-mockito-unit-tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3-mockito-unit-tests/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +76,7 @@
       <workItem from="1769187628789" duration="1250000" />
       <workItem from="1769276606016" duration="26000" />
       <workItem from="1769464457744" duration="91000" />
+      <workItem from="1769889735919" duration="774000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create second project with TDD approach">
       <option name="closed" value="true" />

@@ -129,7 +129,7 @@ class PersonServicesTest {
     // given
     Person existingPerson = new Person(1L, "OldJohn", "Doe", "johndoe@example", "Sao Paulo",
         "Male");
-    Person updatePersonInput = new Person(1L, "NewJohn", "Doe", "johndoe@example", "Sao Paulo",
+    Person updatePersonInput = new Person(1L, "NewJohn", "Doe", "newjohndoe@example", "Sao Paulo",
         "Male");
 
     when(personRepository.findById(1L)).thenReturn(Optional.of(existingPerson));
@@ -141,6 +141,7 @@ class PersonServicesTest {
     // then
     assertNotNull(updatedPerson);
     assertEquals("NewJohn", updatedPerson.getFirstName());
+    assertEquals("newjohndoe@example", updatedPerson.getEmail());
   }
 
   @Test
@@ -163,6 +164,8 @@ class PersonServicesTest {
   void testGivenPersonId_WhenDelete_thenRemovePerson() {
     // given
     when(personRepository.findById(1L)).thenReturn(Optional.of(personWithId));
+    // doNothing().when(personRepository).delete(personWithId);
+    // doNothing() is the default behavior for void methods in Mockito, so it's not strictly necessary here.
 
     // when
     personService.delete(1L);

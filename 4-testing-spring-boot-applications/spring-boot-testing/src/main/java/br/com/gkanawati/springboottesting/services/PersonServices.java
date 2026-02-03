@@ -52,7 +52,7 @@ public class PersonServices {
     entity.setAddress(person.getAddress());
     entity.setGender(person.getGender());
 
-    return repository.save(person);
+    return repository.save(entity);
   }
 
   public void delete(Long id) {

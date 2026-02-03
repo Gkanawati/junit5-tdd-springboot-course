@@ -18,7 +18,7 @@ class PersonRepositoryTest {
   @Autowired
   PersonRepository personRepository;
 
-  Person person;
+  private Person person;
 
   @BeforeEach
   void setUp() {
@@ -41,9 +41,8 @@ class PersonRepositoryTest {
   @DisplayName("Given Person List When Find All Then Return Person List")
   void testGivenPersonList_whenFindAll_thenReturnPersonList() {
     // given
-    Person person1 = new Person("John", "Doe", "johndoe@example", "Sao Paulo", "Male");
     Person person2 = new Person("Jane", "Doe", "janedoe@example", "Rio de Janeiro", "Female");
-    personRepository.save(person1);
+    personRepository.save(person);
     personRepository.save(person2);
 
     // when

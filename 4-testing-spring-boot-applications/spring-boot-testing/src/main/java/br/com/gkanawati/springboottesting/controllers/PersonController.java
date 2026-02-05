@@ -5,6 +5,8 @@ import br.com.gkanawati.springboottesting.services.PersonServices;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
+import java.net.URI;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -53,12 +55,18 @@ public class PersonController {
 
   @Operation(summary = "Create a new person",
       responses = {
-          @ApiResponse(responseCode = "200", description = "Person created")
+          @ApiResponse(responseCode = "201", description = "Person created")
       })
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
-  public Person create(@RequestBody Person person) {
-    return service.create(person);
+  public ResponseEntity<Person> create(@Valid @RequestBody Person person) {
+    try {
+      var createdPerson = service.create(person);
+      return ResponseEntity.created(URI.create("/person/" + createdPerson.getId()))
+          .body(createdPerson);
+    } catch (Exception e) {
+      return ResponseEntity.badRequest().build();
+    }
   }
 
   @Operation(summary = "Update a person",

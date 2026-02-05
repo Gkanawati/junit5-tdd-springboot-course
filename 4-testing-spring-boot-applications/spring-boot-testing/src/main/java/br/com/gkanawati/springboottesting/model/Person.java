@@ -6,6 +6,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity
@@ -18,18 +21,29 @@ public class Person implements Serializable {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @NotBlank
+  @Size(max = 80)
   @Column(name = "first_name", nullable = false, length = 80)
   private String firstName;
 
+  @NotBlank
+  @Size(max = 80)
   @Column(name = "last_name", nullable = false, length = 80)
   private String lastName;
 
+  @NotBlank
+  @Size(max = 100)
   @Column(nullable = false, length = 100)
   private String address;
 
+  @NotBlank
+  @Size(max = 6)
   @Column(nullable = false, length = 6)
   private String gender;
 
+  @NotBlank
+  @Email
+  @Size(max = 100)
   @Column(nullable = false, length = 100)
   private String email;
 

@@ -49,6 +49,7 @@ public class PersonServices {
 
     entity.setFirstName(person.getFirstName());
     entity.setLastName(person.getLastName());
+    entity.setEmail(person.getEmail());
     entity.setAddress(person.getAddress());
     entity.setGender(person.getGender());
 

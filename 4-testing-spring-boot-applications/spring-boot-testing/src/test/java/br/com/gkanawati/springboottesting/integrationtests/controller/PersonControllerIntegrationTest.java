@@ -8,8 +8,8 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import br.com.gkanawati.springboottesting.config.TestConfigs;
@@ -25,6 +25,7 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import java.util.Arrays;
+import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -175,24 +176,23 @@ public class PersonControllerIntegrationTest extends AbstractIntegrationTest {
         .statusCode(200)
         .extract().body().asString();
 
-    Person[] people = objectMapper.readValue(content, Person[].class);
+    Person[] returnedArray = objectMapper.readValue(content, Person[].class);
+    List<Person> people = Arrays.asList(returnedArray);
 
     assertNotNull(people);
-    assertTrue(people.length > 0);
-    assertAll(
-        () -> assertTrue(people.length >= 2),
-        () -> assertTrue(Arrays.stream(people).anyMatch(p -> p.getId().equals(person.getId()))),
-        () -> assertTrue(
-            Arrays.stream(people).anyMatch(p -> p.getEmail().equals(person2.getEmail())))
-    );
+    assertFalse(people.isEmpty());
 
     // with hamcrest matchers
-    assertThat(Arrays.asList(people), allOf(
-        hasItem(hasProperty("id", equalTo(person.getId()))),
-        hasItem(hasProperty("firstName", equalTo(person.getFirstName()))),
-        hasItem(hasProperty("firstName", equalTo(person2.getFirstName()))),
-        hasItem(hasProperty("email", equalTo(person.getEmail()))),
-        hasItem(hasProperty("email", equalTo(person2.getEmail())))
+    assertThat(people, allOf(
+        hasItem(allOf(
+            hasProperty("id", equalTo(person.getId())),
+            hasProperty("firstName", equalTo(person.getFirstName())),
+            hasProperty("email", equalTo(person.getEmail()))
+        )),
+        hasItem(allOf(
+            hasProperty("firstName", equalTo(person2.getFirstName())),
+            hasProperty("email", equalTo(person2.getEmail()))
+        ))
     ));
   }
 
